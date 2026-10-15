@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Federico Delrio — Scientific Machine Learning researcher working across physics, AI and complex systems." />
+    <title>Federico Delrio — Scientific Machine Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="nav-wrap">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Federico Delrio, home">FD<span>·</span></a>
+        <div class="nav-links">
+          <a href="#research">Research</a>
+          <a href="#trajectory">Trajectory</a>
+          <a href="#publications">Publications</a>
+        </div>
+        <a class="nav-contact" href="mailto:fededelri@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Torino, Italy · Available for research-oriented collaborations</p>
+          <h1>Learning the <em>structure</em><br />behind complex signals.</h1>
+          <p class="hero-text">I am Federico Delrio, a Scientific Machine Learning researcher working where physics, mathematical modelling and AI meet. I build methods that are not only predictive, but physiologically and physically meaningful.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">Explore my work <span>↓</span></a>
+            <a class="text-link" href="https://scholar.google.com/citations?hl=it&user=3pk4kWcAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-orbit reveal" aria-label="Research disciplines: physics, machine learning, engineering and physiology">
+          <div class="orbit-grid"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="core">SML</div>
+          <span class="orbit-label physics">Physics</span>
+          <span class="orbit-label machine">Machine<br />Learning</span>
+          <span class="orbit-label physiology">Physiology</span>
+          <span class="orbit-label engineering">Engineering</span>
+        </div>
+      </section>
+
+      <section class="statement section-shell reveal">
+        <p class="eyebrow">Research direction</p>
+        <p class="statement-text">My work starts from a simple question: <span>when data is incomplete, noisy or biased, what should a model be allowed to learn?</span> I use physical constraints and careful validation to make the answer more reliable.</p>
+      </section>
+
+      <section class="research section-shell" id="research">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected research</p>
+          <h2>Three lenses on<br /><em>intelligent modelling.</em></h2>
+          <p>I move between biomedical AI, scientific simulation and aerospace-oriented systems — always with the same interest in robust inference from real-world data.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-card-feature reveal">
+            <div class="project-visual visual-pinn" aria-hidden="true">
+              <div class="wave wave-a"></div><div class="wave wave-b"></div><div class="wave wave-c"></div>
+              <div class="pressure-point p1"></div><div class="pressure-point p2"></div><div class="pressure-point p3"></div>
+              <span>ECG · PPG · ABP</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>01 / PhD research</span><span>2022—2026</span></div>
+              <h3>From morphology to physiology</h3>
+              <p>Physics-Informed Neural Networks for cuffless blood-pressure estimation, combining ECG and PPG signals with one-dimensional blood-flow equations, Windkessel boundary conditions and physiological priors.</p>
+              <ul class="tags"><li>PINNs</li><li>Time series</li><li>Haemodynamics</li><li>Validation</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-cosmos" aria-hidden="true">
+              <div class="star s1"></div><div class="star s2"></div><div class="star s3"></div><div class="star s4"></div><div class="star s5"></div>
+              <svg viewBox="0 0 400 160" role="presentation"><path d="M0 115 C50 112 62 42 108 88 S160 148 196 73 S246 120 282 62 S344 104 400 20" /></svg>
+              <span>χ² / HI clustering</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>02 / MSc thesis</span><span>2018—2022</span></div>
+              <h3>Looking for ultra-light axions</h3>
+              <p>Built a numerical framework for neutral-hydrogen autocorrelation, comparing halo-model predictions against ALFALFA data across ultra-light-axion parameter space.</p>
+              <ul class="tags"><li>Python</li><li>COLOSSUS</li><li>axionCAMB</li><li>Cosmology</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-tracking" aria-hidden="true">
+              <div class="coord-line line-one"></div><div class="coord-line line-two"></div><div class="coord-line line-three"></div>
+              <div class="tracking-target"></div><span>GPS → Alt–Az → EQ</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>03 / ALTEC</span><span>2018</span></div>
+              <h3>Tracking moving platforms</h3>
+              <p>Developed client/server scripts and coordinate transformations to autonomously point an EQMod telescope mount at moving ground and aerial platforms through the INDI protocol.</p>
+              <ul class="tags"><li>Perl</li><li>INDI / EQMod</li><li>Control systems</li><li>Aerospace</li></ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="method section-shell reveal">
+        <div class="method-intro">
+          <p class="eyebrow">How I work</p>
+          <h2>Rigour is a feature,<br /><em>not a constraint.</em></h2>
+        </div>
+        <div class="method-list">
+          <div><span>01</span><p><strong>Start with the system.</strong> Build a model of the physical, physiological or operational context before choosing an architecture.</p></div>
+          <div><span>02</span><p><strong>Stress-test generalisation.</strong> Prefer subject-wise and cross-database validation over optimistic random splits.</p></div>
+          <div><span>03</span><p><strong>Make uncertainty useful.</strong> Treat failure modes, bias and missing information as findings that guide the next model.</p></div>
+        </div>
+      </section>
+
+      <section class="trajectory section-shell" id="trajectory">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Trajectory</p>
+          <h2>A path across<br /><em>disciplines and scales.</em></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-year">2022—2026</div><div><h3>PhD Researcher <span>· Politecnico di Torino</span></h3><p>Deep learning, PINNs and physiological modelling for cardiovascular signals and cuffless blood-pressure estimation.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-year">2024—2025</div><div><h3>Visiting Researcher <span>· EURECOM, Biot</span></h3><p>Multimodal physiological signals, stress detection and robust neural-network evaluation in an international research environment.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-year">2018—2022</div><div><h3>MSc Astrophysics &amp; Theoretical Physics <span>· University of Turin</span></h3><p>Scientific computing and cosmological modelling of dark matter through neutral-hydrogen clustering.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-year">2018</div><div><h3>Research &amp; Control Systems Intern <span>· ALTEC, Turin</span></h3><p>Automated tracking and control workflows for aerospace-oriented moving platforms.</p></div></article>
+        </div>
+      </section>
+
+      <section class="publications section-shell" id="publications">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Published work</p>
+          <h2>Research that<br /><em>travels beyond the lab.</em></h2>
+        </div>
+        <div class="publication-list reveal">
+          <a href="https://scholar.google.com/citations?hl=it&user=3pk4kWcAAAAJ" target="_blank" rel="noreferrer"><span>2025</span><span>Physics Informed Neural Network for Continuous and Cuffless Arterial Blood Pressure</span><span>ICoAILO · in press ↗</span></a>
+          <a href="https://scholar.google.com/citations?hl=it&user=3pk4kWcAAAAJ" target="_blank" rel="noreferrer"><span>2023</span><span>Non-invasive arterial blood pressure estimation from ECG and PPG signals using a Conv1D-BiLSTM neural network</span><span>Engineering Proceedings ↗</span></a>
+          <a href="https://scholar.google.com/citations?hl=it&user=3pk4kWcAAAAJ" target="_blank" rel="noreferrer"><span>2025</span><span>Enhancing ECG Analysis with a Hybrid Deep Learning Approach: Automatic Detection of Significant Features</span><span>Springer Nature ↗</span></a>
+        </div>
+        <p class="award reveal"><span>✦</span> Best Paper Award · ICoAILO 2025 · Bali, Indonesia</p>
+      </section>
+
+      <section class="contact section-shell reveal">
+        <p class="eyebrow">Next question</p>
+        <h2>Have a complex system<br />worth <em>understanding?</em></h2>
+        <div class="contact-bottom"><a href="mailto:fededelri@gmail.com">fededelri@gmail.com <span>↗</span></a><div><a href="https://www.linkedin.com/in/federico-delrio" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://scholar.google.com/citations?hl=it&user=3pk4kWcAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></div></div>
+      </section>
+    </main>
+    <footer><span>© 2026 Federico Delrio</span><span>Physics × Machine Learning × Engineering</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
