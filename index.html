@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="overrides.css" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -37,6 +38,7 @@
         </div>
         <div class="hero-orbit reveal" aria-label="Research disciplines: physics, machine learning, engineering and physiology">
           <div class="orbit-grid"></div>
+          <div class="portrait-wrap"><img src="assets/federico-delrio.png" alt="Portrait of Federico Delrio" /></div>
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <div class="orbit orbit-three"></div>
@@ -56,7 +58,7 @@
       <section class="research section-shell" id="research">
         <div class="section-heading reveal">
           <p class="eyebrow">Selected research</p>
-          <h2>Three lenses on<br /><em>intelligent modelling.</em></h2>
+          <h2>Five lenses on<br /><em>intelligent modelling.</em></h2>
           <p>I move between biomedical AI, scientific simulation and aerospace-oriented systems — always with the same interest in robust inference from real-world data.</p>
         </div>
         <div class="project-grid">
@@ -98,6 +100,32 @@
               <h3>Tracking moving platforms</h3>
               <p>Developed client/server scripts and coordinate transformations to autonomously point an EQMod telescope mount at moving ground and aerial platforms through the INDI protocol.</p>
               <ul class="tags"><li>Perl</li><li>INDI / EQMod</li><li>Control systems</li><li>Aerospace</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-quality" aria-hidden="true">
+              <div class="quality-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="quality-chip">p<sub>good</sub> ≥ .90</div><span>1,454,358 ECG windows</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>04 / Dataset quality</span><span>PulseDB</span></div>
+              <h3>Learning to curate clinical signals</h3>
+              <p>Designed a scalable learned quality-control pipeline for ECG data in PulseDB, combining manual curation, a lightweight Conv1D classifier, cross-database checks and subject-balanced selection rules.</p>
+              <ul class="tags"><li>Conv1D</li><li>PulseDB</li><li>VitalDB / MIMIC</li><li>Quality control</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-ecg" aria-hidden="true">
+              <svg viewBox="0 0 420 170" role="presentation"><path d="M0 97h61l10-4 10 8 10-30 12 62 11-77 13 42 10-8h73l11-5 10 9 11-29 12 60 10-75 13 42 10-7h76" /></svg>
+              <div class="wavelet-grid"></div><span>P · QRS · T wave detection</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>05 / WIRN 2023</span><span>Published work</span></div>
+              <h3>Reading the ECG in time and frequency</h3>
+              <p>Developed a hybrid 2D-CNN–BiLSTM approach that transforms ECG segments into continuous-wavelet scalograms to detect P waves, QRS complexes and T waves.</p>
+              <ul class="tags"><li>CWT scalograms</li><li>CNN–BiLSTM</li><li>QT Database</li><li>ECG</li></ul>
             </div>
           </article>
         </div>
